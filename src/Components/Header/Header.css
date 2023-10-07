@@ -1,5 +1,5 @@
 .header {
-    background-color: #fcddec;
+    background-color: #ffeafe;
     height: 10vmin;
     display: flex;
     flex-direction: column;
@@ -8,5 +8,6 @@
     font-size: calc(9vmin);
     font-family: Snell Roundhand, cursive;
     color: rgb(0, 0, 0);
-    border: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom:1px solid black;
   }

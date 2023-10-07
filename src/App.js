@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import Header from "./Components/Header/Header.js";
 import HomeScreen from "./Containers/HomeScreen/HomeScreen.js";
 import ResumeScreen from "./Containers/ResumeScreen/ResumeScreen.js";
-import headshot from './Assets/Headshot.png';
+import AboutMeScreen from "./Containers/AboutMeScreen/AboutMe.js";
 
 function App() {
 
@@ -21,13 +21,9 @@ function App() {
   {
     setButtonClicked(3);
   }
-  const handleExperienceClick = () =>
-  {
-      setButtonClicked(4);
-  }
   const handleAboutMeClick = () =>
   {
-      setButtonClicked(5);
+      setButtonClicked(4);
   }
     
   const Button = ({style, text, onClick}) =>
@@ -48,12 +44,12 @@ function App() {
             <Button style = "projects_button" text = "Projects" onClick = {handleProjectsClick}>Test</Button>
             <Button style = "about_me_button" text = "About Me" onClick = {handleAboutMeClick}></Button>
         </section>
-      {buttonClicked == 2 ?
+      {buttonClicked === 2 ?
       <ResumeScreen />
-      : buttonClicked == 3 ?
+      : buttonClicked === 3 ?
       null
-      : buttonClicked == 4 ?
-      null
+      : buttonClicked === 4 ?
+      <AboutMeScreen />
       : <HomeScreen />}
     </div>
     
