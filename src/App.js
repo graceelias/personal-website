@@ -4,6 +4,7 @@ import Header from "./Components/Header/Header.js";
 import HomeScreen from "./Containers/HomeScreen/HomeScreen.js";
 import ResumeScreen from "./Containers/ResumeScreen/ResumeScreen.js";
 import AboutMeScreen from "./Containers/AboutMeScreen/AboutMe.js";
+import ProjectsScreen from "./Containers/ProjectsScreen/ProjectsScreen.js";
 
 function App() {
 
@@ -47,7 +48,7 @@ function App() {
       {buttonClicked === 2 ?
       <ResumeScreen />
       : buttonClicked === 3 ?
-      null
+      <ProjectsScreen />
       : buttonClicked === 4 ?
       <AboutMeScreen />
       : <HomeScreen />}

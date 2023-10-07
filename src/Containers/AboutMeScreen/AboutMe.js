@@ -10,7 +10,7 @@ function AboutMe()
             I'm a computer science student with a minor in mechanical engineering at Boston University. I am currently
             enrolled in Boston University's BA/MS program and will be graduating in May 2025 with both my Bachelor's and
             Master's degrees. I have supplemented my studies in computer science with a minor in mechanical engineering as 
-            I hope to get into robotics in the future. Currently my interests and coursework lie within artificial 
+            I hope to pursue robotics in the future. Currently my interests and coursework lie within artificial 
             intelligence, databases, and software development. 
         </div>
         <br></br>
