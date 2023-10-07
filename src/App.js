@@ -1,24 +1,62 @@
-import logo from './logo.svg';
 import './App.css';
+import React, {useState} from 'react';
+import Header from "./Components/Header/Header.js";
+import HomeScreen from "./Containers/HomeScreen/HomeScreen.js";
+import ResumeScreen from "./Containers/ResumeScreen/ResumeScreen.js";
+import headshot from './Assets/Headshot.png';
 
 function App() {
+
+  const [buttonClicked, setButtonClicked] = useState(0);
+
+  const handleHomeClick = () => 
+  {
+    setButtonClicked(1);
+  }
+  const handleResumeClick = () =>
+  {
+     setButtonClicked(2);
+  }
+  const handleProjectsClick = () =>
+  {
+    setButtonClicked(3);
+  }
+  const handleExperienceClick = () =>
+  {
+      setButtonClicked(4);
+  }
+  const handleAboutMeClick = () =>
+  {
+      setButtonClicked(5);
+  }
+    
+  const Button = ({style, text, onClick}) =>
+  {
+    return(
+      <button type="button" className={style} onClick={onClick}>
+        {text}
+      </button>
+    );
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <section className="button_container">
+            <Button style = "home_button" text = "Home" onClick = {handleHomeClick}> </Button>
+            <Button style = "resume_button" text = "Resume" onClick = {handleResumeClick}></Button>
+            <Button style = "projects_button" text = "Projects" onClick = {handleProjectsClick}>Test</Button>
+            <Button style = "about_me_button" text = "About Me" onClick = {handleAboutMeClick}></Button>
+        </section>
+      {buttonClicked == 2 ?
+      <ResumeScreen />
+      : buttonClicked == 3 ?
+      null
+      : buttonClicked == 4 ?
+      null
+      : <HomeScreen />}
     </div>
+    
   );
 }
 
