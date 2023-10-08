@@ -1,13 +1,26 @@
 .header {
     background-color: #ffeafe;
-    height: 10vmin;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    height: 10vmin; 
     font-size: calc(9vmin);
     font-family: Snell Roundhand, cursive;
     color: rgb(0, 0, 0);
     border-top: 1px solid black;
     border-bottom:1px solid black;
   }
+
+.logo
+{
+  height: 5vmin;
+}
+
+.logos
+{
+  position: absolute;
+  right: 2vmin;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2vmin;
+  justify-content: center;
+}

@@ -1,7 +1,7 @@
 import "./AboutMe.css";
 import headshot from './Assets/Headshot.png';
 
-function AboutMe()
+const AboutMe = () =>
 {
     return(
         <div>
