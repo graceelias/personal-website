@@ -5,7 +5,7 @@ const FlixFinderScreen = () =>
 
     return(
         <div>
-            FlixFinder
+            <div> FlixFinder</div>
             <a href= "https://github.com/graceelias/cs411project">GitHub Link</a>
         </div>
     );
