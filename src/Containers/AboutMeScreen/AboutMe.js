@@ -48,7 +48,6 @@ const AboutMe = () =>
         </div>
         <img src={headshot} alt="headshot" className="headshot" />
         </div>
-
     )
 }
 

@@ -1,6 +1,6 @@
 .about_me_text
 {
-color: black;
+  color: black;
   font-size: calc(3vmin);
   font-family: serif;
   position:absolute;
@@ -9,6 +9,7 @@ color: black;
   padding-left: 4vmin;
   padding-top: 2vmin;
   padding-bottom: 2vmin;
+  background-color: #ffeafe;
 }
 
 .headshot

@@ -5,7 +5,7 @@ function HomeScreen()
     return(
         <section className="home_background">
         <div className = "home_text">
-            Hi! My name is Grace and I'm a computer science student with a mechanical engineering minor at Boston University. Check out my site to learn more about me and my experiences!
+           Grace Elias is a computer science student with a mechanical engineering minor at Boston University pursuing the university's BA/MS degree. Check out this site to learn more about her and her experiences!
         </div>
         </section>
     );

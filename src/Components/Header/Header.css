@@ -1,11 +1,15 @@
 .header {
-    background-color: #ffeafe;
+    background-image: url("Background.jpeg");
     height: 10vmin; 
     font-size: calc(9vmin);
-    font-family: Snell Roundhand, cursive;
+    font-family:'Times New Roman', Times, serif;
     color: rgb(0, 0, 0);
     border-top: 1px solid black;
     border-bottom:1px solid black;
+    background-size: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 
 .logo
