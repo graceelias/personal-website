@@ -72,13 +72,13 @@ function App() {
         </section>
       {buttonClicked === 2 ?
       <ResumeScreen />
-      : buttonClicked === 3  && projectClicked == "PersonalWebsite" ?
+      : buttonClicked === 3  && projectClicked === "PersonalWebsite" ?
       null
-      : buttonClicked === 3  && projectClicked == "FlixFinder" ?
+      : buttonClicked === 3  && projectClicked === "FlixFinder" ?
       <FlixFinderScreen />
-      : buttonClicked === 3  && projectClicked == "NeedleFeltingMachine" ?
+      : buttonClicked === 3  && projectClicked === "NeedleFeltingMachine" ?
       null
-      : buttonClicked === 3  && projectClicked == "InfraredLightHeadTracker" ?
+      : buttonClicked === 3  && projectClicked === "InfraredLightHeadTracker" ?
       null
       : buttonClicked === 3  ?
       <section className="project_container">
